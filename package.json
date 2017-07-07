@@ -1,0 +1,22 @@
+{
+  "name": "tts-eco-nodejs",
+  "version": "1.0.0",
+  "description": "Simple app that uses IBm Watson Text to Speech to synthesize text inputs form user",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackatruck/tts-eco-nodejs.git"
+  },
+  "author": "Leandro David (leandrodvd@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hackatruck/tts-eco-nodejs/issues"
+  },
+  "homepage": "https://github.com/hackatruck/tts-eco-nodejs#readme",
+  "dependencies": {
+    "ws": "^3.0.0"
+  }
+}
