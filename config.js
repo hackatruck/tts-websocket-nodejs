@@ -2,7 +2,7 @@ var config = {};
 
 // Find how to get a token at:
 // https://www.ibm.com/watson/developercloud/doc/common/getting-started-tokens.html
-config.token = "<put-your-token-here";
+config.token = "<put-your-token-here>";
 
 // Some valid voices to choose
 // de-DE_BirgitVoice
