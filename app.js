@@ -2,19 +2,14 @@ var config = require('./config');
 var WebSocket = require('ws');
 
 var voice = config.voice ||  "en-US_AllisonVoice";
-console.log("voice:" + voice);
-
 var token = config.token || "";
-console.log("token:" + token);
-
 var wsURI = 'wss://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?voice=' +
-  voice + '&watson-token=' + token + '&timmings=[words] ';
-console.log("WebSocket URI:" + wsURI);
+  voice + '&watson-token=' + token;
 
 function onOpen(evt) {
   console.log("WebSocket Opened - synthesize a text message");
   var message = {
-    text: 'Hello world',
+    text: 'Olá Mundo',
     accept: '*/*'
   };
   websocket.send(JSON.stringify(message));
@@ -41,6 +36,7 @@ function onClose(evt) {
 
 function onError(evt) {
   console.log("Error on websocket");
+  console.log(evt);
 }
 
 var websocket = new WebSocket(wsURI);
