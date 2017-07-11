@@ -20,6 +20,6 @@ config.token = "<put-your-token-here>";
 // ja-JP_EmiVoice
 // pt-BR_IsabelaVoice
 
-config.voice="en-US_AllisonVoice";
+config.voice="pt-BR_IsabelaVoice";
 
 module.exports = config;
